@@ -10,8 +10,8 @@
 					<article class="blog-grid-top">
 						<div class="b-grid-top">
 							<div class="blog_info_left_grid">
-								<a href="single.html">
-									<img src="images/b1.jpg" class="img-fluid" alt="">
+								<a href="{{route('single')}}">
+									<img src="{{asset('images/b1.jpg')}}" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="blog-info-middle">
@@ -34,18 +34,18 @@
 						</div>
 
 						<h3>
-							<a href="single.html">Amet consectetur adipisicing </a>
+							<a href="{{route('single')}}">Amet consectetur adipisicing </a>
 						</h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
 							aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
 							aute irudre dolor in elit sed uta labore dolore reprehender</p>
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
+						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 					</article>
 					<article class="blog-grid-top my-5">
 						<div class="b-grid-top">
 							<div class="blog_info_left_grid">
-								<a href="single.html">
-									<img src="images/b4.jpg" class="img-fluid" alt="">
+								<a href="{{route('single')}}">
+									<img src="{{asset('images/b4.jpg')}}" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="blog-info-middle">
@@ -68,18 +68,18 @@
 						</div>
 
 						<h3>
-							<a href="single.html">Amet consectetur adipisicing </a>
+							<a href="{{route('single')}}">Amet consectetur adipisicing </a>
 						</h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
 							aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
 							aute irudre dolor in elit sed uta labore dolore reprehender</p>
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
+						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 					</article>
 					<article class="blog-grid-top mb-4">
 						<div class="b-grid-top">
 							<div class="blog_info_left_grid">
-								<a href="single.html">
-									<img src="images/b1.jpg" class="img-fluid" alt="">
+								<a href="{{route('single')}}">
+									<img src="{{asset('images/b1.jpg')}}" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="blog-info-middle">
@@ -102,12 +102,12 @@
 						</div>
 
 						<h3>
-							<a href="single.html">Amet consectetur adipisicing </a>
+							<a href="{{route('single')}}">Amet consectetur adipisicing </a>
 						</h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
 							aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
 							aute irudre dolor in elit sed uta labore dolore reprehender</p>
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
+						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 					</article>
 					<nav aria-label="Page navigation example">
 						<ul class="pagination justify-content-left">
@@ -134,7 +134,7 @@
 				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-left">
 					<div class="right-blog-info text-left">
 						<div class="tech-btm">
-							<img src="images/banner1.jpg" class="img-fluid" alt="">
+							<img src="{{asset('images/banner1.jpg')}}" class="img-fluid" alt="">
 						</div>
 						<div class="tech-btm">
 							<h4>Sign up to our newsletter</h4>
@@ -167,14 +167,14 @@
 
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/1.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/1.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -185,13 +185,13 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/6.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -228,14 +228,14 @@
 							<h4>Recent Post</h4>
 							<div class="blog-grids">
 								<div class="blog-grid-left">
-									<a href="single.html">
-										<img src="images/b1.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/b1.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male</a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male</a>
 									</h5>
 								</div>
 
@@ -275,14 +275,14 @@
 
 							<div class="blog-grids row mb-3 text-left">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/1.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/1.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -293,14 +293,14 @@
 							</div>
 							<div class="blog-grids row mb-3 text-left">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/5.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -311,13 +311,13 @@
 							</div>
 							<div class="blog-grids row mb-3 text-left">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/3.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/3.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -335,147 +335,13 @@
 	</section>
 	<!--//main-->
 
-	<!--footer-->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
-					<h3>About US</h3>
-					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
-					<div class="read">
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
-					</div>
-				</div>
-				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+@endsection
 
-					<div class="tech-btm">
-						<h3>Latest Posts</h3>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/4.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
+@section('under')
 
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/5.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
-
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/6.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
-
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<!-- subscribe -->
-				<div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
-					<h2>Signup to our newsletter</h2>
-					<div class="subscribe-main text-left">
-						<div class="subscribe-form">
-							<form action="#" method="post" class="subscribe_form">
-								<input class="form-control" type="email" placeholder="Enter your email..." required="">
-								<button type="submit" class="btn btn-primary submit">Submit</button>
-							</form>
-							<div class="clearfix"> </div>
-						</div>
-						<p>We respect your privacy.No spam ever!</p>
-					</div>
-					<!-- //subscribe -->
-				</div>
-			</div>
-			<!-- footer -->
-			<div class="footer-cpy text-center">
-				<div class="footer-social">
-					<div class="copyrighttop">
-						<ul>
-							<li class="mx-3">
-								<a class="facebook" href="#">
-									<i class="fab fa-facebook-f"></i>
-									<span>Facebook</span>
-								</a>
-							</li>
-							<li>
-								<a class="facebook" href="#">
-									<i class="fab fa-twitter"></i>
-									<span>Twitter</span>
-								</a>
-							</li>
-							<li class="mx-3">
-								<a class="facebook" href="#">
-									<i class="fab fa-google-plus-g"></i>
-									<span>Google+</span>
-								</a>
-							</li>
-							<li>
-								<a class="facebook" href="#">
-									<i class="fab fa-pinterest-p"></i>
-									<span>Pinterest</span>
-								</a>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-				<div class="w3layouts-agile-copyrightbottom">
-					<p>© 2018 Weblog. All Rights Reserved | Design by
-						<a href="http://w3layouts.com/">W3layouts</a>
-					</p>
-
-				</div>
-			</div>
-
-			<!-- //footer -->
-
-
-		</div>
-	</footer>
-	<!---->
-
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
 	<!--/ start-smoth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
+    <script src="{{asset('js/move-top.js')}}"></script>
+    <script src="{{asset('js/easing.js')}}"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -490,14 +356,6 @@
 
 	<script>
 		$(document).ready(function () {
-			/*
-									var defaults = {
-							  			containerID: 'toTop', // fading element id
-										containerHoverID: 'toTopHover', // fading element hover id
-										scrollSpeed: 1200,
-										easingType: 'linear'
-							 		};
-									*/
 
 			$().UItoTop({
 				easingType: 'easeOutQuart'

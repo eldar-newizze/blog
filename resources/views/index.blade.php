@@ -16,7 +16,7 @@
 							<span>you desire</span>
 						</h3>
 						<div class="read">
-							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -26,7 +26,7 @@
 							<span>and Creative</span>
 						</h3>
 						<div class="read">
-							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 							<span>you desire</span>
 						</h3>
 						<div class="read">
-							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 							<span>and Creative</span>
 						</h3>
 						<div class="read">
-							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 			<ul id="flexiselDemo1">
 				<li>
 					<div class="blog-item">
-						<img src="images/1.jpg" alt=" " class="img-fluid" />
+						<img src="{{asset('images/1.jpg')}}" alt=" " class="img-fluid" />
 						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
 							<i class="fas fa-play"></i>
 						</button>
@@ -86,7 +86,7 @@
 				</li>
 				<li>
 					<div class="blog-item">
-						<img src="images/2.jpg" alt=" " class="img-fluid" />
+						<img src="{{asset('images/2.jpg')}}" alt=" " class="img-fluid" />
 						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
 							<i class="fas fa-play"></i>
 						</button>
@@ -104,7 +104,7 @@
 				</li>
 				<li>
 					<div class="blog-item">
-						<img src="images/3.jpg" alt=" " class="img-fluid" />
+						<img src="{{asset('images/3.jpg')}}" alt=" " class="img-fluid" />
 						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
 							<i class="fas fa-play"></i>
 						</button>
@@ -123,7 +123,7 @@
 				</li>
 				<li>
 					<div class="blog-item">
-						<img src="images/4.jpg" alt=" " class="img-fluid" />
+						<img src="{{asset('images/4.jpg')}}" alt=" " class="img-fluid" />
 						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
 							<i class="fas fa-play"></i>
 						</button>
@@ -169,8 +169,8 @@
 					<div class="blog-grid-top">
 						<div class="b-grid-top">
 							<div class="blog_info_left_grid">
-								<a href="single.html">
-									<img src="images/b1.jpg" class="img-fluid" alt="">
+								<a href="{{route('single')}}">
+									<img src="{{asset('images/b1.jpg')}}" class="img-fluid" alt="">
 								</a>
 							</div>
 							<div class="blog-info-middle">
@@ -193,19 +193,19 @@
 						</div>
 
 						<h3>
-							<a href="single.html">Amet consectetur adipisicing </a>
+							<a href="{{route('single')}}">Amet consectetur adipisicing </a>
 						</h3>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
 							aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
 							aute irudre dolor in elit sed uta labore dolore reprehender</p>
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
+						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 					</div>
 					<!--//silder-->
 					<div class="blog-mid-sec">
 						<ul id="flexiselDemo2">
 							<li>
 								<div class="blog-item">
-									<img src="images/5.jpg" alt=" " class="img-fluid" />
+									<img src="{{asset('images/5.jpg')}}" alt=" " class="img-fluid" />
 									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
 										<i class="fas fa-play"></i>
 									</button>
@@ -216,7 +216,7 @@
 							</li>
 							<li>
 								<div class="blog-item">
-									<img src="images/6.jpg" alt=" " class="img-fluid" />
+									<img src="{{asset('images/6.jpg')}}" alt=" " class="img-fluid" />
 									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
 										<i class="fas fa-play"></i>
 									</button>
@@ -227,7 +227,7 @@
 							</li>
 							<li>
 								<div class="blog-item">
-									<img src="images/7.jpg" alt=" " class="img-fluid" />
+									<img src="{{asset('images/7.jpg')}}" alt=" " class="img-fluid" />
 									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
 										<i class="fas fa-play"></i>
 									</button>
@@ -238,7 +238,7 @@
 							</li>
 							<li>
 								<div class="blog-item">
-									<img src="images/8.jpg" alt=" " class="img-fluid" />
+									<img src="{{asset('images/8.jpg')}}" alt=" " class="img-fluid" />
 									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
 										<i class="fas fa-play"></i>
 									</button>
@@ -256,12 +256,12 @@
 							<div class="col-md-6 blog-grid-top">
 								<div class="b-grid-top">
 									<div class="blog_info_left_grid">
-										<a href="single.html">
-											<img src="images/b2.jpg" class="img-fluid" alt="">
+										<a href="{{route('single')}}">
+											<img src="{{asset('images/b2.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<h3>
-										<a href="single.html">Amet consectetur </a>
+										<a href="{{route('single')}}">Amet consectetur </a>
 									</h3>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
 								</div>
@@ -284,12 +284,12 @@
 							<div class="col-md-6 blog-grid-top">
 								<div class="b-grid-top">
 									<div class="blog_info_left_grid">
-										<a href="single.html">
-											<img src="images/b3.jpg" class="img-fluid" alt="">
+										<a href="{{route('single')}}">
+											<img src="{{asset('images/b3.jpg')}}" class="img-fluid" alt="">
 										</a>
 									</div>
 									<h3>
-										<a href="single.html">Amet adipisicing </a>
+										<a href="{{route('single')}}">Amet adipisicing </a>
 									</h3>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
 
@@ -318,7 +318,7 @@
 				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
 					<div class="right-blog-info text-left">
 						<div class="tech-btm">
-							<img src="images/banner1.jpg" class="img-fluid" alt="">
+							<img src="{{asset('images/banner1.jpg')}}" class="img-fluid" alt="">
 						</div>
 						<div class="tech-btm">
 							<h4>Sign up to our newsletter</h4>
@@ -362,14 +362,14 @@
 
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/1.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/1.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -380,14 +380,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/5.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -398,13 +398,13 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/3.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/3.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -415,14 +415,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/2.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/2.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -433,14 +433,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/4.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -451,13 +451,13 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/6.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -482,8 +482,8 @@
 				<div class="col-md-4 news-left">
 					<ul id="demo1_thumbs" class="list-inline">
 						<li>
-							<a href="images/m1.jpg">
-								<img src="images/m1.jpg" alt="" data-desoslide-caption="<h3>Latest Post 1</h3>">
+							<a href="{{route('single')}}">
+								<img src="{{asset('images/m1.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 1</h3>">
 								<div class="mid-text-info">
 									<h4>Maecenas aliqua</h4>
 									<p>Integer </p>
@@ -495,8 +495,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="images/m2.jpg">
-								<img src="images/m2.jpg" alt="" data-desoslide-caption="<h3>Latest Post 2</h3>">
+							<a href="{{route('single')}}">
+								<img src="{{asset('images/m2.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 2</h3>">
 								<div class="mid-text-info">
 									<h4>Maecenas aliqua</h4>
 									<p>Integer </p>
@@ -508,8 +508,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="images/m3.jpg">
-								<img src="images/m3.jpg" alt="" data-desoslide-caption="<h3>Latest Post 3</h3>">
+							<a href="{{route('single')}}">
+								<img src="{{asset('images/m3.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 3</h3>">
 								<div class="mid-text-info">
 									<h4>Maecenas aliqua</h4>
 									<p>Integer </p>
@@ -521,8 +521,8 @@
 							</a>
 						</li>
 						<li>
-							<a href="images/m4.jpg">
-								<img src="images/m4.jpg" alt="" data-desoslide-caption="<h3>Latest Post 4</h3>">
+							<a href="{{route('single')}}">
+								<img src="{{asset('images/m4.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 4</h3>">
 								<div class="mid-text-info">
 									<h4>Maecenas aliqua</h4>
 									<p>Integer </p>
@@ -551,8 +551,8 @@
 						<div class="blog-grid-top">
 							<div class="b-grid-top">
 								<div class="blog_info_left_grid">
-									<a href="single.html">
-										<img src="images/b4.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/b4.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="blog-info-middle">
@@ -575,12 +575,12 @@
 							</div>
 
 							<h3>
-								<a href="single.html">Amet consectetur adipisicing </a>
+								<a href="{{route('single')}}">Amet consectetur adipisicing </a>
 							</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
 								aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
 								aute irudre dolor in elit sed uta labore dolore reprehender</p>
-							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 						</div>
 						<!--//silder-->
 
@@ -594,14 +594,14 @@
 
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/5.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -612,14 +612,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/6.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -630,13 +630,13 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/7.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/7.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -647,14 +647,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/8.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/8.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -665,14 +665,14 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/4.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -683,13 +683,13 @@
 							</div>
 							<div class="blog-grids row mb-3">
 								<div class="col-md-5 blog-grid-left">
-									<a href="single.html">
-										<img src="images/6.jpg" class="img-fluid" alt="">
+									<a href="{{route('single')}}">
+										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="col-md-7 blog-grid-right">
 									<h5>
-										<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
+										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
 									</h5>
 									<div class="sub-meta">
 										<span>
@@ -707,143 +707,12 @@
 			</div>
 		</section>
 		<!--//main-->
-	<!--footer-->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
-					<h3>About US</h3>
-					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
-					<div class="read">
-						<a href="single.html" class="btn btn-primary read-m">Read More</a>
-					</div>
-				</div>
-				<div class="col-lg-4 footer-grid-agileits-w3ls text-left">
+@endsection
 
-					<div class="tech-btm">
-						<h3>Latest Posts</h3>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/4.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
-
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/5.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
-
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-						<div class="blog-grids row mb-3">
-							<div class="col-md-5 blog-grid-left">
-								<a href="single.html">
-									<img src="images/6.jpg" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="col-md-7 blog-grid-right">
-
-								<h5>
-									<a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-								</h5>
-								<div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<!-- subscribe -->
-				<div class="col-lg-4 subscribe-main footer-grid-agileits-w3ls text-left">
-					<h2>Signup to our newsletter</h2>
-					<div class="subscribe-main text-left">
-							<div class="subscribe-form">
-									<form action="#" method="post" class="subscribe_form">
-										<input class="form-control" type="email" placeholder="Enter your email..." required="">
-										<button type="submit" class="btn btn-primary submit">Submit</button>
-									</form>
-									<div class="clearfix"> </div>
-						   </div>
-						<p>We respect your privacy.No spam ever!</p>
-					</div>
-					<!-- //subscribe -->
-				</div>
-			</div>
-			<!-- footer -->
-			<div class="footer-cpy text-center">
-				<div class="footer-social">
-					<div class="copyrighttop">
-						<ul>
-							<li class="mx-3">
-								<a class="facebook" href="#">
-									<i class="fab fa-facebook-f"></i>
-									<span>Facebook</span>
-								</a>
-							</li>
-							<li>
-								<a class="facebook" href="#">
-									<i class="fab fa-twitter"></i>
-									<span>Twitter</span>
-								</a>
-							</li>
-							<li class="mx-3">
-								<a class="facebook" href="#">
-									<i class="fab fa-google-plus-g"></i>
-									<span>Google+</span>
-								</a>
-							</li>
-							<li>
-								<a class="facebook" href="#">
-									<i class="fab fa-pinterest-p"></i>
-									<span>Pinterest</span>
-								</a>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-				<div class="w3layouts-agile-copyrightbottom">
-					<p>© 2018 Weblog. All Rights Reserved | Design by
-						<a href="http://w3layouts.com/">W3layouts</a>
-					</p>
-
-				</div>
-			</div>
-
-			<!-- //footer -->
-		</div>
-	</footer>
-	<!---->
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
+@section('under')
 	<!-- //js -->
 	<!-- desoslide-JavaScript -->
-	<script src="js/jquery.desoslide.js"></script>
+	<script src="{{asset('js/jquery.desoslide.js')}}"></script>
 	<script>
 		$('#demo1_thumbs').desoSlide({
 			main: {
@@ -910,11 +779,11 @@
 
 		});
 	</script>
-	<script src="js/jquery.flexisel.js"></script>
+	<script src="{{asset('js/jquery.flexisel.js')}}"></script>
 	<!-- //password-script -->
 	<!--/ start-smoth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
+    <script src="{{asset('js/move-top.js')}}"></script>
+    <script src="{{asset('js/easing.js')}}"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
