@@ -6,34 +6,46 @@
 			<h3 class="tittle">Register Now</h3>
 				<div class="inner-sec">
 			<div class="login p-5 bg-light mx-auto mw-100">
-				<form action="#" method="post">
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+				<form action="{{route('register')}}" method="post">
+                    @csrf
 						<div class="form-row">
 								<div class="col-md-6 mb-3">
 										<label for="validationCustom01">First name</label>
 
-									<input type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+									<input name="firstname" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
 								</div>
 								<div class="col-md-6 mb-3">
 										<label for="validationCustom02">Last name</label>
-									<input type="text" class="form-control" id="validationDefault02" placeholder="" required="">
+									<input name="lastname" type="text" class="form-control" id="validationDefault02" placeholder="" required="">
 								</div>
 							</div>
 
                     <div class="form-row">
                         <div class="col-md-12 mb-3">
                             <label for="validationCustom01">E-Mail</label>
-                            <input type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+                            <input name="email" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
                         </div>
                     </div>
 
 							<div class="form-row">
 								<div class="form-group col-md-6">
 										<label for="exampleInputPassword1 mb-2">Password</label>
-									<input type="password" class="form-control" id="password1" placeholder="" required="">
+									<input name="password" type="password" class="form-control" id="password1" placeholder="" required="">
 								</div>
 								<div class="form-group col-md-6">
 										<label for="exampleInputPassword2 mb-2">Confirm Password</label>
-										<input type="password" class="form-control" id="password2" placeholder="" required="">
+										<input name="password_confirmation" type="password" class="form-control" id="password2" placeholder="" required="">
 									</div>
 
 							</div>

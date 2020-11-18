@@ -36,7 +36,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <i class="fab fa-linode"></i> Weblog</a>
             </div>
             <div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
+                @auth
                 <span>Welcome Back!</span>
+                    <span class="mx-lg-4 mx-md-2  mx-1">
+						<a href="{{route('exit')}}">
+							<i class="fas fa-sign-out-alt"></i> Sign Out</a>
+					</span>
+                    <span>
+                @else
                 <span class="mx-lg-4 mx-md-2  mx-1">
 						<a href="{{route('login')}}">
 							<i class="fas fa-lock"></i> Sign In</a>
@@ -44,7 +51,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <span>
 						<a href="{{route('register')}}">
 							<i class="far fa-user"></i> Register</a>
-					</span>
+                </span>
+                @endauth
             </div>
             <div class="col-md-4 log-icons text-right">
 
@@ -203,8 +211,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h2>Signup to our newsletter</h2>
                 <div class="subscribe-main text-left">
                     <div class="subscribe-form">
-                        <form action="#" method="post" class="subscribe_form">
-                            <input class="form-control" type="email" placeholder="Enter your email..." required="">
+                        <form action="{{route('newsletter')}}" method="post" class="subscribe_form">
+                            @csrf
+                            <input class="form-control" name="email" type="email" placeholder="Enter your email..." required="">
                             <button type="submit" class="btn btn-primary submit">Submit</button>
                         </form>
                         <div class="clearfix"> </div>
