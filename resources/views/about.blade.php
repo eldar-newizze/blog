@@ -22,57 +22,13 @@
 							aute irudre dolor in elit sed uta labore dolore reprehender</p>
 						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
 					</div>
-					<div class="row">
-						<div class="col-md-6 card mt-3">
-							<img class="card-img-top" src="{{asset('images/2.jpg')}}" alt="Card-image">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor </h5>
-								<p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt.. </p>
-								<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-6 card mt-3">
-							<img class="card-img-top" src="{{asset('images/3.jpg')}}" alt="Card-image">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor </h5>
-								<p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt.. </p>
-								<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-6 card mt-3">
-							<img class="card-img-top" src="{{asset('images/2.jpg')}}" alt="Card-image">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor </h5>
-								<p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt.. </p>
-								<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-							</div>
-						</div>
-						<div class="col-md-6 card mt-3">
-							<img class="card-img-top" src="{{asset('images/3.jpg')}}" alt="Card-image">
-							<div class="card-body">
-								<h5 class="card-title">Lorem ipsum dolor </h5>
-								<p class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt.. </p>
-								<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-							</div>
-						</div>
-					</div>
+
 				</div>
 				<!--//left-->
 				<!--right-->
 				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
 					<div class="right-blog-info text-left">
-						<div class="tech-btm">
-							<img src="{{asset('images/banner1.jpg')}}" class="img-fluid" alt="">
-						</div>
-						<div class="tech-btm">
-							<h4>Sign up to our newsletter</h4>
-							<p>Pellentesque dui, non felis. Maecenas male </p>
-							<form action="#" method="post">
-								<input type="email" placeholder="Email" required="">
-								<input type="submit" value="Subscribe">
-							</form>
 
-						</div>
 						<div class="tech-btm widget_social">
 							<h4>Stay Connect</h4>
 							<ul>
@@ -124,116 +80,7 @@
 								    aria-valuemax="100"></div>
 							</div>
 						</div>
-						<div class="tech-btm">
-							<h4>Recent Posts</h4>
 
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/7.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/8.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-						</div>
 					</div>
 
 				</aside>

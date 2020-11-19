@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::view('/', 'index')->name('index');
+Route::redirect('/', 'post')->name('index');
 
 Route::view('register', 'register')->name('register');
 Route::post('/register', [UserController::class, 'register'])->name('register');
@@ -30,9 +30,5 @@ Route::view('about', 'about')->name('about');
 Route::view('contact', 'contact')->name('contact');
 Route::view('single', 'single')->name('single');
 
-Route::view('blog1', 'blog1')->name('blog1');
-Route::view('blog2', 'blog2')->name('blog2');
-Route::view('blog3', 'blog3')->name('blog3');
-
-
-
+Route::resource('post', \App\Http\Controllers\PostController::class);
+Route::resource('comment', \App\Http\Controllers\CommentController::class);

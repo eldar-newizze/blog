@@ -62,650 +62,101 @@
 		</div>
 	</div>
 	<!--/model-->
-	<!--//banner-->
-	<section class="bottom-slider">
-		<div class="course_demo1">
-			<ul id="flexiselDemo1">
-				<li>
-					<div class="blog-item">
-						<img src="{{asset('images/1.jpg')}}" alt=" " class="img-fluid" />
-						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
-							<i class="fas fa-play"></i>
-						</button>
-
-						<div class="floods-text">
-							<h3>The fed and inequality
-								<span>Blogger
-									<label>|</label>
-									<i>Adom Smith</i>
-								</span>
-							</h3>
-
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="blog-item">
-						<img src="{{asset('images/2.jpg')}}" alt=" " class="img-fluid" />
-						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
-							<i class="fas fa-play"></i>
-						</button>
-
-						<div class="floods-text">
-							<h3>The fastest insect in the world
-								<span>Blogger
-									<label>|</label>
-									<i>Adom Smith</i>
-								</span>
-							</h3>
-
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="blog-item">
-						<img src="{{asset('images/3.jpg')}}" alt=" " class="img-fluid" />
-						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
-							<i class="fas fa-play"></i>
-						</button>
-
-
-						<div class="floods-text">
-							<h3>Billionaires versus Millionaires
-								<span>Blogger
-									<label>|</label>
-									<i>Adom Smith</i>
-								</span>
-							</h3>
-
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="blog-item">
-						<img src="{{asset('images/4.jpg')}}" alt=" " class="img-fluid" />
-						<button type="button" class="btn btn-primary play" data-toggle="modal" data-target="#exampleModal">
-							<i class="fas fa-play"></i>
-						</button>
-
-
-						<div class="floods-text">
-							<h3>Billionaires versus Millionaires
-								<span>Blogger
-									<label>|</label>
-									<i>Adom Smith</i>
-								</span>
-							</h3>
-
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="embed-responsive embed-responsive-21by9">
-							<iframe src="https://player.vimeo.com/video/145787219"></iframe>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/main-->
-	<section class="main-content-w3layouts-agileits">
-		<div class="container">
-			<div class="row">
-				<!--left-->
-				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
-					<div class="blog-grid-top">
-						<div class="b-grid-top">
-							<div class="blog_info_left_grid">
-								<a href="{{route('single')}}">
-									<img src="{{asset('images/b1.jpg')}}" class="img-fluid" alt="">
-								</a>
-							</div>
-							<div class="blog-info-middle">
-								<ul>
-									<li>
-										<a href="#">
-											<i class="far fa-calendar-alt"></i> FEB 15,2018</a>
-									</li>
-									<li class="mx-2">
-										<a href="#">
-											<i class="far fa-thumbs-up"></i> 201 Likes</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="far fa-comment"></i> 15 Comments</a>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-
-						<h3>
-							<a href="{{route('single')}}">Amet consectetur adipisicing </a>
-						</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
-							aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
-							aute irudre dolor in elit sed uta labore dolore reprehender</p>
-						<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-					</div>
-					<!--//silder-->
-					<div class="blog-mid-sec">
-						<ul id="flexiselDemo2">
-							<li>
-								<div class="blog-item">
-									<img src="{{asset('images/5.jpg')}}" alt=" " class="img-fluid" />
-									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
-										<i class="fas fa-play"></i>
-									</button>
-									<div class="floods-text">
-										<h3>Lorem ipsum </h3>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="blog-item">
-									<img src="{{asset('images/6.jpg')}}" alt=" " class="img-fluid" />
-									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
-										<i class="fas fa-play"></i>
-									</button>
-									<div class="floods-text">
-										<h3>Lorem ipsum </h3>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="blog-item">
-									<img src="{{asset('images/7.jpg')}}" alt=" " class="img-fluid" />
-									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
-										<i class="fas fa-play"></i>
-									</button>
-									<div class="floods-text">
-										<h3>Lorem ipsum </h3>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="blog-item">
-									<img src="{{asset('images/8.jpg')}}" alt=" " class="img-fluid" />
-									<button type="button" class="btn btn-primary play sec" data-toggle="modal" data-target="#exampleModal">
-										<i class="fas fa-play"></i>
-									</button>
-									<div class="floods-text">
-										<h3>Lorem ipsum </h3>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-
-					<!--//silder-->
-					<div class="blog-girds-sec">
-						<div class="row">
-							<div class="col-md-6 blog-grid-top">
-								<div class="b-grid-top">
-									<div class="blog_info_left_grid">
-										<a href="{{route('single')}}">
-											<img src="{{asset('images/b2.jpg')}}" class="img-fluid" alt="">
-										</a>
-									</div>
-									<h3>
-										<a href="{{route('single')}}">Amet consectetur </a>
-									</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
-								</div>
-								<ul class="blog-icons">
-									<li>
-										<a href="#">
-											<i class="far fa-clock"></i> 5 Monts</a>
-									</li>
-									<li class="mx-2">
-										<a href="#">
-											<i class="far fa-comment"></i> 21</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-eye"></i> 2000</a>
-									</li>
-
-								</ul>
-							</div>
-							<div class="col-md-6 blog-grid-top">
-								<div class="b-grid-top">
-									<div class="blog_info_left_grid">
-										<a href="{{route('single')}}">
-											<img src="{{asset('images/b3.jpg')}}" class="img-fluid" alt="">
-										</a>
-									</div>
-									<h3>
-										<a href="{{route('single')}}">Amet adipisicing </a>
-									</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt aliqua uta enim.</p>
-
-								</div>
-								<ul class="blog-icons">
-									<li>
-										<a href="#">
-											<i class="far fa-clock"></i> 5 Monts</a>
-									</li>
-									<li class="mx-2">
-										<a href="#">
-											<i class="far fa-comment"></i> 21</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fas fa-eye"></i> 2000</a>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--//left-->
-				<!--right-->
-				<aside class="col-lg-4 agileits-w3ls-right-blog-con text-right">
-					<div class="right-blog-info text-left">
-						<div class="tech-btm">
-							<img src="{{asset('images/banner1.jpg')}}" class="img-fluid" alt="">
-						</div>
-						<div class="tech-btm">
-							<h4>Sign up to our newsletter</h4>
-							<p>Pellentesque dui, non felis. Maecenas male </p>
-							<form action="#" method="post">
-								<input type="email" placeholder="Email" required="">
-								<input type="submit" value="Subscribe">
-							</form>
-
-						</div>
-						<div class="tech-btm widget_social">
-							<h4>Stay Connect</h4>
-							<ul>
-
-								<li>
-									<a class="twitter" href="#">
-										<i class="fab fa-twitter"></i>
-										<span class="count">317K</span> Twitter Followers</a>
-								</li>
-								<li>
-									<a class="facebook" href="#">
-										<i class="fab fa-facebook-f"></i>
-										<span class="count">218k</span> Twitter Followers</a>
-								</li>
-								<li>
-									<a class="dribble" href="#">
-										<i class="fab fa-dribbble"></i>
-
-										<span class="count">215k</span> Dribble Followers</a>
-								</li>
-								<li>
-									<a class="pin" href="#">
-										<i class="fab fa-pinterest"></i>
-										<span class="count">190k</span> Pinterest Followers</a>
-								</li>
-
-							</ul>
-						</div>
-						<div class="tech-btm">
-							<h4>Recent Posts</h4>
-
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/3.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/2.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</aside>
-				<!--//right-->
-			</div>
-		</div>
-	</section>
-	<!--//main-->
-	<!--/middle-->
-	<section class="middle-sec-agileinfo-w3ls">
-		<div class="container">
-			<div class="row inner-sec">
-				<div class="col-md-4 news-left">
-					<ul id="demo1_thumbs" class="list-inline">
-						<li>
-							<a href="{{route('single')}}">
-								<img src="{{asset('images/m1.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 1</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua</h4>
-									<p>Integer </p>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="{{route('single')}}">
-								<img src="{{asset('images/m2.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 2</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua</h4>
-									<p>Integer </p>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="{{route('single')}}">
-								<img src="{{asset('images/m3.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 3</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua</h4>
-									<p>Integer </p>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="{{route('single')}}">
-								<img src="{{asset('images/m4.jpg')}}" alt="" data-desoslide-caption="<h3>Latest Post 4</h3>">
-								<div class="mid-text-info">
-									<h4>Maecenas aliqua</h4>
-									<p>Integer </p>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div id="demo1_main_image" class="col-md-8  news-right"></div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-
-	</section>
-	<!--//middle-->
 	<!---->
-	<section class="main-content-w3layouts-agileits">
-			<div class="container">
-				<div class="row">
-					<!--left-->
-					<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
-						<div class="blog-grid-top">
-							<div class="b-grid-top">
-								<div class="blog_info_left_grid">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/b4.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="blog-info-middle">
-									<ul>
-										<li>
-											<a href="#">
-												<i class="far fa-calendar-alt"></i> FEB 15,2018</a>
-										</li>
-										<li class="mx-2">
-											<a href="#">
-												<i class="far fa-thumbs-up"></i> 201 Likes</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="far fa-comment"></i> 15 Comments</a>
-										</li>
+    <section class="main-content-w3layouts-agileits">
+        <div class="container">
+            <h3 class="tittle">Blog Posts</h3>
+            <div class="inner-sec">
+                <!--left-->
+                <div class="left-blog-info-w3layouts-agileits text-left">
+                    <div class="row">
+                        @auth
+                        <div class="col-12">
+                            <form action="{{route('post.store')}}" method="post"  enctype="multipart/form-data">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="postTitle">Title</label>
+                                    <input type="text" class="form-control" id="postTitle" name="title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="postDescription">Text</label>
+                                    <textarea class="form-control" id="postDescription" rows="3" name="description"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Image</label>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                                </div>
+                                <input type="submit" value="Write" class="btn btn-dark">
+                            </form>
+                        </div>
+                        @endauth
+                            @foreach($posts as $post)
+                                <div class="col-lg-4 card">
+                                    <a href="{{route('single')}}">
+                                        <img src="{{asset('storage/'.$post->image)}}" class="card-img-top img-fluid" alt="">
+                                    </a>
+                                    <div class="card-body">
+                                        <ul class="blog-icons my-4">
+                                            <li>
+                                                <a href="#">
+                                                    <sub><i class="far fa-calendar-alt"></i>{{$post->created_at}}</sub></a>
+                                            </li>
+                                            <li class="mx-2">
+                                                <a href="#">
+                                                    <i class="far fa-comment"></i>0</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fas fa-eye"></i>{{$post->looks}}</a>
+                                            </li>
+                                            @if(Auth::user()->id == $post->user_id)
+                                            <li>
+                                                <form action="post/{{$post->id}}" method="post">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" style="border: none; background-color: white">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
 
-									</ul>
-								</div>
-							</div>
-
-							<h3>
-								<a href="{{route('single')}}">Amet consectetur adipisicing </a>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
-								aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
-								aute irudre dolor in elit sed uta labore dolore reprehender</p>
-							<a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-						</div>
-						<!--//silder-->
-
-
-					</div>
-					<!--//left-->
-					<!--right-->
-					<aside class="col-lg-4 agileits-w3ls-right-blog-con text-left">
-						<div class="tech-btm">
-							<h4>Recent Posts</h4>
-
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/7.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/8.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Jan, 2018</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="blog-grids row mb-3">
-								<div class="col-md-5 blog-grid-left">
-									<a href="{{route('single')}}">
-										<img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="col-md-7 blog-grid-right">
-									<h5>
-										<a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-									</h5>
-									<div class="sub-meta">
-										<span>
-											<i class="far fa-clock"></i> 20 Feb, 2018</span>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</aside>
-					<!--//right-->
-				</div>
-			</div>
-		</section>
+                                                </form>
+                                            </li>
+                                            @endif
+                                        </ul>
+                                        <h5 class="card-title">
+                                            <a href="{{route('single')}}">{{$post->title}}</a>
+                                        </h5>
+                                        <p class="card-text mb-3">{{$post->description}}</p>
+                                        <a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
+                                    </div>
+                                </div>
+                            @endforeach
+                            <div class="col-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-left mt-4">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                            </div>
+                    </div>
+                    <!--//left-->
+                </div>
+            </div>
+        </div>
+    </section>
 		<!--//main-->
 @endsection
 
@@ -713,16 +164,6 @@
 	<!-- //js -->
 	<!-- desoslide-JavaScript -->
 	<script src="{{asset('js/jquery.desoslide.js')}}"></script>
-	<script>
-		$('#demo1_thumbs').desoSlide({
-			main: {
-				container: '#demo1_main_image',
-				cssClass: 'img-responsive'
-			},
-			effect: 'sideFade',
-			caption: true
-		});
-	</script>
 
 	<!-- requried-jsfiles-for owl -->
 	<script>

@@ -91,27 +91,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="{{route('index')}}">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('about')}}">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">
-                            Features
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#"></a>
-                            <a class="dropdown-item" href="{{route('blog1')}}">Standard Blog</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('blog2')}}">2 Column Blog</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('blog3')}}">3 Column Blog</a>
-
-                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('contact')}}">Contact</a>
@@ -122,8 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <input class="form-control mr-sm-2" type="search" placeholder="Search here..." name="Search" required="">
                     <button class="btn btn1 my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                 </form>
-
-
 
             </div>
         </nav>
@@ -144,66 +127,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. lacinia eget consectetur sed, convallis at tellus..</p>
                 <div class="read">
                     <a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 footer-grid-agileits-w3ls text-left">
-
-                <div class="tech-btm">
-                    <h3>Latest Posts</h3>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="{{route('single')}}">
-                                <img src="{{asset('images/4.jpg')}}" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-
-                            <h5>
-                                <a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="{{route('single')}}">
-                                <img src="{{asset('images/5.jpg')}}" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-
-                            <h5>
-                                <a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="blog-grids row mb-3">
-                        <div class="col-md-5 blog-grid-left">
-                            <a href="{{route('single')}}">
-                                <img src="{{asset('images/6.jpg')}}" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-7 blog-grid-right">
-
-                            <h5>
-                                <a href="{{route('single')}}">Pellentesque dui, non felis. Maecenas male non felis </a>
-                            </h5>
-                            <div class="sub-meta">
-									<span>
-										<i class="far fa-clock"></i> 20 Jan, 2018</span>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
             <!-- subscribe -->
