@@ -171,14 +171,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="b-grid-top">
 								<div class="blog_info_left_grid">
 									<a href="single.html">
-										<img src={{$value->img}} class="img-fluid" alt="">
+                                        @if ($value->img)
+                                            <img src="{{asset('storage/'.$value->img)}}"  class="img-fluid" alt="NotImage">
+                                        @endif
 									</a>
 								</div>
 								<div class="blog-info-middle">
 									<ul>
 										<li>
 											<a href="#">
-												<i class="far fa-calendar-alt"></i> FEB 15,2018</a>
+												<i class="far fa-calendar-alt"></i> {{$value->created_at}} </a>
 										</li>
 										<li class="mx-2">
 											<a href="#">
@@ -198,6 +200,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</h3>
 							<p>{{$value->description}}</p>
 							<a href="single.html" class="btn btn-primary read-m">Read More</a>
+                            <form action="Notes/{{$value->id}}" method="post">
+                                @method('DELETE')
+                                @csrf
+                                <input type="submit" value="Удалить"  class="btn btn-primary read-m"/>
+                            </form>
+                            <a href="Notes/{{$value->id}}/edit" method="get"  class="btn btn-primary read-m">
+                                <button type="submit"  style="background-color: transparent; border: none; color: white">Изменить </button>
+                            </a>
 						</div>
 						<!--//silder-->
 
