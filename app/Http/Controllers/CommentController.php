@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
@@ -31,11 +32,18 @@ class CommentController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+        $url = explode("/", url()->previous());
+        $id = end($url);
+        $comment = new Comment();
+        $comment->post_id = $id;
+        $comment->user_id = Auth::id();
+        $comment->message = $request->message;
+        $comment->save();
+        return redirect()->back();
     }
 
     /**

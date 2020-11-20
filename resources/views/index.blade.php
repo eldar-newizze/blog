@@ -72,7 +72,7 @@
                     <div class="row">
                         @auth
                         <div class="col-12">
-                            <form action="{{route('post.store')}}" method="post"  enctype="multipart/form-data">
+                            <form action="{{route('post.store')}}" method="post"  enctype="multipart/form-data" class="bg-light p-2">
                                 @csrf
                                 <div class="form-group">
                                     <label for="postTitle">Title</label>
@@ -88,6 +88,7 @@
                                 </div>
                                 <input type="submit" value="Write" class="btn btn-dark">
                             </form>
+                            <hr class="mt-5 mb-5">
                         </div>
                         @endauth
                             @foreach($posts as $post)

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comment;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -67,7 +68,8 @@ class PostController extends Controller
     {
         DB::table('posts')->where('id', $post->id)->increment('looks');
         $post->looks++;
-        return view('single', compact("post",));
+        $comments = Comment::with('user')->where('post_id', $post->id)->get();
+        return view('single', compact("post", "comments",));
     }
 
     /**
