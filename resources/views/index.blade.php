@@ -92,7 +92,7 @@
                         @endauth
                             @foreach($posts as $post)
                                 <div class="col-lg-4 card">
-                                    <a href="{{route('single')}}">
+                                    <a href="post/{{$post->id}}">
                                         <img src="{{asset('storage/'.$post->image)}}" class="card-img-top img-fluid" alt="">
                                     </a>
                                     <div class="card-body">
@@ -109,6 +109,7 @@
                                                 <a href="#">
                                                     <i class="fas fa-eye"></i>{{$post->looks}}</a>
                                             </li>
+                                            @auth
                                             @if(Auth::user()->id == $post->user_id)
                                             <li>
                                                 <form action="post/{{$post->id}}" method="post">
@@ -121,12 +122,13 @@
                                                 </form>
                                             </li>
                                             @endif
+                                            @endauth
                                         </ul>
                                         <h5 class="card-title">
-                                            <a href="{{route('single')}}">{{$post->title}}</a>
+                                            <a href="post/{{$post->id}}">{{$post->title}}</a>
                                         </h5>
                                         <p class="card-text mb-3">{{$post->description}}</p>
-                                        <a href="{{route('single')}}" class="btn btn-primary read-m">Read More</a>
+                                        <a href="post/{{$post->id}}" class="btn btn-primary read-m">Read More</a>
                                     </div>
                                 </div>
                             @endforeach

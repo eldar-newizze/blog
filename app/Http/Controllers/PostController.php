@@ -61,11 +61,13 @@ class PostController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Post  $post
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function show(Post $post)
     {
-        //
+        DB::table('posts')->where('id', $post->id)->increment('looks');
+        $post->looks++;
+        return view('single', compact("post",));
     }
 
     /**
