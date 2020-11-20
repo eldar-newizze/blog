@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="top-bar_sub_w3layouts container-fluid">
 			<div class="row">
 				<div class="col-md-4 logo text-left">
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="/Notes">
 						<i class="fab fa-linode"></i> Weblog</a>
 				</div>
 				<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
@@ -130,6 +130,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html">Contact</a>
 							</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Notes/create">New Post</a>
+                            </li>
 
 						</ul>
 							<form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
@@ -158,6 +161,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!--//middle-->
 	<!---->
+    @foreach ($date as $value)
 	<section class="main-content-w3layouts-agileits">
 			<div class="container">
 				<div class="row">
@@ -167,7 +171,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="b-grid-top">
 								<div class="blog_info_left_grid">
 									<a href="single.html">
-										<img src="images/b4.jpg" class="img-fluid" alt="">
+										<img src={{$value->img}} class="img-fluid" alt="">
 									</a>
 								</div>
 								<div class="blog-info-middle">
@@ -190,11 +194,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 
 							<h3>
-								<a href="single.html">Amet consectetur adipisicing </a>
+								<a href="single.html">{{$value->title}} </a>
 							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod tempor incididunt ut labore et dolore magna
-								aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco labor nisi ut aliquip exea commodo consequat duis
-								aute irudre dolor in elit sed uta labore dolore reprehender</p>
+							<p>{{$value->description}}</p>
 							<a href="single.html" class="btn btn-primary read-m">Read More</a>
 						</div>
 						<!--//silder-->
@@ -207,6 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</section>
+    @endforeach
 		<!--//main-->
 	<!--footer-->
 	<footer>
