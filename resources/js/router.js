@@ -6,6 +6,9 @@ import App from "./components/App";
 // Auth
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
+import Blog from "./components/Blog";
+import ReadPost from "./components/blog/ReadPost"
+import SortedPosts from "./components/SortedPosts";
 
 
 Vue.use(VueRouter);
@@ -22,6 +25,18 @@ const routes = [
     {
         path: "/register",
         component: Register
+    },
+    {
+        path: "/blog",
+        component: Blog
+    },
+    {
+        path: "/post:id",
+        component: ReadPost
+    },
+    {
+        path: "/filter:id",
+        component: SortedPosts
     }
 ]
 

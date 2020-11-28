@@ -70,7 +70,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#"></a>
-                                <router-link class="dropdown-item" to="#">Standard Blog</router-link>
+                                <router-link class="dropdown-item" to="/blog">Standard Blog</router-link>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="blog2.html">2 Column Blog</a>
                                 <div class="dropdown-divider"></div>
@@ -113,10 +113,12 @@ export default {
 
         if (localStorage.user) {
             this.user = localStorage.user
-            console.log(this.user)
         } else {
             this.init()
         }
+    },
+    watch: {
+
     },
     methods: {
         init()

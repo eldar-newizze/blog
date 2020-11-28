@@ -78,7 +78,8 @@ export default {
                 axios.post('api/auth/login', data)
                     .then(res => {
                         if (this.checkMeOut) {
-                            localStorage.user = JSON.stringify(res.data)
+                            //localStorage.user = JSON.stringify(res.data)
+                            localStorage.setItem('user', res.data.name)
                         }
                         this.app.user = res.data
                         this.$router.push("/")

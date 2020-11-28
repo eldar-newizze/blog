@@ -6,6 +6,7 @@ use App\Models\User;
 use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class AppController extends Controller
 {
@@ -39,6 +40,7 @@ class AppController extends Controller
         $user->name = $request->username;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
+        $user->remember_token = Str::random(80);
 
 
         $user->save();

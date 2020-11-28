@@ -105,9 +105,7 @@ export default {
 
                 axios.post('api/auth/register', data)
                     .then(res => {
-                        console.log('hello1')
                         this.app.user = res.data
-                        console.log('hello2')
                         this.$router.push("/")
                     }).catch(errors => {
                     //this.errors.push(errors.response.data.error)

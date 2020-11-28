@@ -16,8 +16,7 @@
 
 
         <span class="mx-lg-4 mx-md-2  mx-1" v-else>
-
-                    <i class="fas fa-lock"></i> {{ app.user.username }}
+                    <i class="fas fa-lock">{{ app.user.name }}</i>
                     <a @click.prevent="logout" href="javascript:;" class="dropdown-item">Logout</a>
             </span>
     </div>
@@ -30,9 +29,11 @@ export default {
     data: () => ({}),
     mounted() {
         if (localStorage.user) {
-            this.app.user = localStorage.user
-            console.log(this.app.user)
+            this.app.user = {
+                'name': localStorage.user
+            }
         }
+        console.log(this.app.user.name)
     },
     watch: {
 

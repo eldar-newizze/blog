@@ -22,3 +22,12 @@ Route::prefix('auth')->group(function (){
     Route::get('/logout', [\App\Http\Controllers\AppController::class, 'logout'])->name('logout');
 
 });
+
+Route::resource('posts', \App\Http\Controllers\Api\v1\PostController::class);
+Route::resource('categories', \App\Http\Controllers\Api\v1\CategoryController::class);
+Route::resource('comments', \App\Http\Controllers\Api\v1\CommentsController::class);
+
+Route::post('/categories/{id}', [\App\Http\Controllers\Api\v1\CategoryController::class, 'sortCategories'])
+    ->name('categories-sort');
+Route::post('/comments/{id}', [\App\Http\Controllers\Api\v1\CommentsController::class, 'sortComments'])
+    ->name('comments-sort');
