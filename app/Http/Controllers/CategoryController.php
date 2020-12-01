@@ -41,8 +41,11 @@ class CategoryController extends Controller
         ]);*/
         $category = new CategoryModel();
         $category->name = $request->input('newCategory');
-        $category->save();
-
+        try {
+            $category->save();
+        } catch (\Exception $exception) {
+            dd($exception->getMessage());
+        }
     }
 
     /**
