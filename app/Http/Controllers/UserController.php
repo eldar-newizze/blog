@@ -41,20 +41,20 @@ class UserController extends Controller
             'password' => 'min:8|required|confirmed|max:20'
         ]);
         try {
-           /* $user = User::create([
+            $user = User::create([
                 'fname' => $request->fname,
                 'sname' => $request->sname,
                 'email' => $request->email,
                 'login' => $request->login,
                 'password' => Hash::make($request->password)
-            ]);*/
-            $user = new User();
+            ]);
+            /*$user = new User();
             $user->fname = $request->fname;
             $user->sname = $request->sname;
             $user->email = $request->email;
             $user->login = $request->login;
             $user->password = Hash::make($request->password);
-            $user->save();
+            $user->save();*/
             Auth::login($user);
             event(new Registered($user));
             return redirect('email/verify');

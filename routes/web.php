@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::resource('/Notes', \App\Http\Controllers\NotesController::class);
 Route::resource('/New', \App\Http\Controllers\CategoryController::class);
 Route::resource('/Change', \App\Http\Controllers\CategoryController::class);
+Route::resource('/Comment', \App\Http\Controllers\CategoryController::class);
 Route::view('login', 'login')->name('login');
 Route::post('login', [\App\Http\Controllers\UserController::class, "EnterUser"])->name('Auth');
 Route::view('register', 'register')->name('register');

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CategoryModel;
+use App\Models\Comment;
 use App\Models\NotesModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -63,9 +64,11 @@ class NotesController extends Controller
      * @param  \App\Models\NotesModel  $notesModel
      * @return \Illuminate\Http\Response
      */
-    public function show(NotesModel $notesModel)
+    public function show($id)
     {
-        //
+        $data =  NotesModel::find($id);
+
+        return view('single',['data'=>$data]);
     }
 
     /**
