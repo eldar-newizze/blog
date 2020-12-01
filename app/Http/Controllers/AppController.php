@@ -14,12 +14,13 @@ class AppController extends Controller
     public function init()
     {
         $user = Auth::user();
-
+        //@todo  \ не нужен response()->
         return \response()->json(['user' => $user], 200);
     }
 
     public function login(Request $request)
     {
+        //@todo PSR-2/12
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password], true)) {
             return response()->json(Auth::user(), 200);
         } else {
@@ -29,6 +30,7 @@ class AppController extends Controller
 
     public function register(Request $request)
     {
+        //@todo use scope
         $user = User::where('email', $request->username)->first();
 
         if (isset($user->id)) {
@@ -42,7 +44,7 @@ class AppController extends Controller
         $user->password = bcrypt($request->password);
         $user->remember_token = Str::random(80);
 
-
+        //@todo лишние пробелы
         $user->save();
 
         Auth::login($user);

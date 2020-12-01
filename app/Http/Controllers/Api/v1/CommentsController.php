@@ -42,6 +42,7 @@ class CommentsController extends Controller
         $comment->email =  $request->email;
         $comment->comment =  $request->comment;
         $comment->save();
+        //@todo использовать try...catch
     }
 
     /**

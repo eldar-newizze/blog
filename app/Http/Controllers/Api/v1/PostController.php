@@ -43,6 +43,7 @@ class PostController extends Controller
         $post->status = true;
         $post->description = $request->description;
         $post->save();
+        //@todo использовать try...catch
     }
 
     /**
@@ -53,14 +54,14 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $post = Post::find($id);
-        if (!$post) {
-            return response()->json([
-                "status" => false,
-                "message" => "Post not found"
-            ])->setStatusCode(404);
+        //@todo более читабельная запись
+        if ($post = Post::find($id)) {
+            return $post;
         }
-        return $post;
+        return response()->json([
+            "status" => false,
+            "message" => "Post not found"
+        ], 404);
     }
 
     /**
@@ -90,6 +91,7 @@ class PostController extends Controller
         $post->status = true;
         $post->description = $request->description;
         $post->save();
+        //@todo use try...catch
     }
 
     /**
@@ -100,6 +102,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
+        //@todo аналог метод show
         $post = Post::find($id)->delete();
         if (!$post) {
             return response()->json([
