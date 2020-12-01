@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class NotesController extends Controller
 {
-    protected $categoty;
+    protected $categoty; //<-
+
     public function __construct(CategoryController $categoryController)
     {
         $this->categoty = $categoryController;
