@@ -54,6 +54,7 @@ class PostController extends Controller
         }
         $post->user_id = Auth::id();
         $post->save();
+        //@todo сделать try..catch
 
         return redirect('/');
     }
@@ -66,6 +67,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+        //@todo убрать лишний запрос в базу
         DB::table('posts')->where('id', $post->id)->increment('looks');
         $post->looks++;
         $comments = Comment::with('user')->where('post_id', $post->id)->get();

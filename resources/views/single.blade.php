@@ -1,5 +1,9 @@
 @extends('templates.index')
 @section('main')
+    @if($errors->any())
+        <h4>{{$errors->first()}}</h4>
+    @endif
+
     <section class="banner-bottom">
         <!--/blog-->
         <div class="container">

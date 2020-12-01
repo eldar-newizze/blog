@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class CommentController extends Controller
 {
@@ -36,14 +37,19 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $url = explode("/", url()->previous());
-        $id = end($url);
-        $comment = new Comment();
-        $comment->post_id = $id;
-        $comment->user_id = Auth::id();
-        $comment->message = $request->message;
-        $comment->save();
-        return redirect()->back();
+        try {
+            $url = explode("/", url()->previous());
+            $id = end($url);
+            $comment = new Comment();
+            $comment->post_id = $id;
+            $comment->user_id = Auth::id();
+            $comment->message = $request->message;
+            $comment->save();
+            return redirect()->back();
+        } catch (\Exception $exception) {
+            Log::channel('custom')->critical($exception->getMessage());
+            return redirect()->back()->withErrors(['msg' => 'Something was wrong']);
+        }
     }
 
     /**
