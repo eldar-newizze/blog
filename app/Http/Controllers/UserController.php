@@ -48,9 +48,12 @@ class UserController extends Controller
         $user->password = Hash::make($request->password);
 
         session()->flash('success', 'Successful registration. Подтвердите почту!');
-        event(new Registered($user));
+
         Auth::login($user);
-        return redirect('/');
+
+        event(new Registered($user));
+
+        return redirect(route('index'));
     }
 
     public function newsletter(Request $request)

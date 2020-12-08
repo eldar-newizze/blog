@@ -7,6 +7,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class PostController extends Controller
 {
@@ -18,7 +19,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('index', compact("posts",));
+        return view('index', compact("posts"));
     }
 
     /**
@@ -45,16 +46,21 @@ class PostController extends Controller
             'image' => 'image',
         ]);
 
-        $post = new Post();
-        $post->title = $request->title;
-        $post->description = $request->description;
-        if ($request->hasFile('image')) {
-            $folder = date('Y-m-d');
-            $post->image = request()->file('image')->store("images/{$folder}", "public");
+        try {
+            $post = new Post();
+            $post->title = $request->title;
+            $post->description = $request->description;
+            if ($request->hasFile('image')) {
+                $folder = date('Y-m-d');
+                $post->image = request()->file('image')->store("images/{$folder}", "public");
+            }
+            $post->user_id = Auth::id();
+            $post->save();
+        } catch (\Exception $e) {
+            Log::channel('custom')->critical($e->getMessage());
+            return redirect()->back()->withErrors(['msg' => 'Something was wrong']);
+
         }
-        $post->user_id = Auth::id();
-        $post->save();
-        //@todo сделать try..catch
 
         return redirect('/');
     }
@@ -67,11 +73,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //@todo убрать лишний запрос в базу
-        DB::table('posts')->where('id', $post->id)->increment('looks');
         $post->looks++;
+        $post->save();
         $comments = Comment::with('user')->where('post_id', $post->id)->get();
-        return view('single', compact("post", "comments",));
+        return view('single', compact("post", "comments"));
     }
 
     /**
