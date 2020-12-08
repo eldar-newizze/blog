@@ -53,9 +53,28 @@
 								<p>
 									<a href="#">By clicking Register, I agree to your terms</a>
 								</p>
-						</form>
+				</form>
+				<button onclick="generate()">Генерировать</button>
 
-					</div>
+				<script>
+					function rand(min, max) {
+						return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+					}
+
+					const leaters = 'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+					let inputs = document.querySelectorAll('input[placeholder]');
+					function generate() {
+						let word = "";
+						for (let i=0; i<10; i++) {
+							word += leaters[rand(0,52)];
+						}
+						word += "@mail.ru";
+						inputs.forEach(input => {
+							input.value = word;
+						})
+					}
+				</script>
+			</div>
 			</div>
 		</div>
 	</section>
